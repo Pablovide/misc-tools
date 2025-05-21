@@ -40,10 +40,8 @@
       "segments": [
         {
           "type": "executiontime",
-          "style": "powerline",
-          "powerline_symbol": "",
+          "style": "plain",
           "foreground": "#ffffff",
-          "background": "#8800dd",
           "template": " <#fefefe></> {{ .FormattedMs }} ",
           "properties": {
             "threshold": 500,
