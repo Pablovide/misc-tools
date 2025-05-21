@@ -28,8 +28,14 @@
             "fetch_upstream_icon": true
           },
           "style": "plain",
-          "template": "{{ .UpstreamIcon }} {{ .HEAD }} {{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }} {{ end }} ",
+          "template": "{{ .UpstreamIcon }} {{ .Upstream }} {{ .HEAD }} {{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }} {{ end }} ",
           "type": "git"
+        }, 
+        {
+          "foreground": "#1997E0",
+          "template": "\ue266 MEM: {{ round .PhysicalPercentUsed .Precision }}%",
+          "style": "plain",
+          "type": "sysinfo"
         }
       ],
       "type": "prompt"
